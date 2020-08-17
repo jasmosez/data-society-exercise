@@ -18,6 +18,6 @@ Write a program that:
 
 ## Solution Notes
 
-Exercise completed in get_weather.rb
-Input text contained in coordinates.txt
-Output sent to output.txt
+* Exercise completed in get_weather.rb
+* Input text contained in coordinates.txt
+* Output sent to output.txt
