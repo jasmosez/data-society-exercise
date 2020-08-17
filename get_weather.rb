@@ -1,12 +1,3 @@
-# EXERCISE INSTRUCTIONS:
-# ----------------------
-# Uses this free weather service to get weather data about each location:
-# https://www.weather.gov/documentation/services-web-api
-# Extract the "temperature" value for "Wednesday Night" for each location
-# Writes out the results to a local text file, in this format:
-# 72, 68, 70
-
-
 require 'faraday'
 require 'json'
 require 'byebug'
@@ -49,7 +40,7 @@ def get_temp_for_coord(coord, period_name)
 # use a properly formatted coordinate string to get the temperature forecast for a given period
 # return the temperature as a string
   
-  # Query the API's 'point' endpoint
+  # Query the API's 'points' endpoint
   url = "https://api.weather.gov/points/#{coord}"
   resp = Faraday.get(url)
   json = JSON.parse(resp.body)
@@ -67,6 +58,7 @@ def get_temp_for_coord(coord, period_name)
 end
 
 
+# BEGIN INSTRUCTIONS
 # get an array of coordinate strings
 coords_arr = get_coords("./coordinates.txt")
 

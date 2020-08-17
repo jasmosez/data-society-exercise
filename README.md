@@ -1,4 +1,6 @@
-# Instructions for Data Society Programming Exercise for Software Engineer Candidates
+
+
+## Instructions for Data Society Programming Exercise for Software Engineer Candidates
 
 Given a list of three geographic US lat / long values in a text file, in this format (you should manually put these three lines into the text file with a text editor):
 
@@ -13,3 +15,9 @@ Write a program that:
 * Extract the "temperature" value for "Wednesday Night" for each location
 * Writes out the results to a local text file, in this format:
  * 72, 68, 70
+
+## Solution Notes
+
+Exercise completed in get_weather.rb
+Input text contained in coordinates.txt
+Output sent to output.txt
